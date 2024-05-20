@@ -14,12 +14,31 @@
                 document.getElementById('BMI').value = bmi.toFixed(1);
             }
         }
+
+        function submitForm(event) {
+            event.preventDefault();
+            var form = document.getElementById('prediction-form');
+            var formData = new FormData(form);
+
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('prediction-result').innerText = `Prediction: ${data.prediction}`;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('prediction-result').innerText = 'Error occurred during prediction';
+            });
+        }
     </script>
 </head>
 <body>
     <div class="container">
         <h1 class="mt-5">Heart Disease Predictor</h1>
-        <form action="/predict" method="post">
+        <form id="prediction-form" onsubmit="submitForm(event)">
             <div class="form-group">
                 <label for="HighBP">High Blood Pressure</label>
                 <small class="form-text text-muted">Have you been told by a health professional that you have High Blood Pressure?</small>
@@ -178,7 +197,7 @@
                     <option value="0">Never attended or kindergarten only</option>
                     <option value="1">Completed primary school</option>
                     <option value="2">Completed secondary school Year 7 to Year 10</option>
-                    <option value="3">Completed Senior secondary school Year 11 to Year 12</option>
+                    <option value="3">Completed senior secondary school Year 11 to Year 12</option>
                     <option value="4">Completed some form of post-secondary education or vocational training</option>
                     <option value="5">Completed some college or trade school</option>
                     <option value="6">Completed Bachelor's degree or higher.</option>
@@ -186,26 +205,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Predict</button>
         </form>
-        {% if prediction is not none %}
-            <h2 class="mt-4">Prediction: {{ prediction }}</h2>
-        {% endif %}
-        <img src="{{ url_for('static', filename='feature_importances.png') }}" class="mt-4">
+        <h2 id="prediction-result" class="mt-4"></h2>
+        <img src="static/feature_importances.png" class="mt-4">
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>
-        function calculateBMI() {
-            var weight = parseFloat(document.getElementById('weight').value);
-            var height = parseFloat(document.getElementById('height').value) / 100; // Convert cm to meters
-            if (!isNaN(weight) && !isNaN(height) && height > 0) {
-                var bmi = weight / (height * height);
-                document.getElementById('BMI').value = bmi.toFixed(1);
-            }
-        }
-    </script>
 </body>
 </html>
-
-
-
