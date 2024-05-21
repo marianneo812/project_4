@@ -5,7 +5,7 @@
 The purpose of this project is to train a machine learning model to recognise heart disease risk factors to predict whether an individual is at risk of developing heart disease. 
 
 ## Method:
-<u>**Dataset:**</u>
+**<u>Dataset:</u>**
 The dataset used esd taken from Kaggle using a csv file containing 21 'features' (with binary or continuous values) and one 'target' variable of Heart Disease or Attack (binary - 0 represents 'No' and 1 represents 'Yes').
 
 <u>**Data Model Implementation:**</u>
@@ -22,6 +22,7 @@ The dataset used esd taken from Kaggle using a csv file containing 21 'features'
 - **Optimising using a different model:** Tensorflow model using three hidden layers was trained to achieve a higher accuracy score for predicting heart disease.
   
   ![image](https://github.com/marianneo812/project_4_group_8/assets/151903302/e958587d-5afa-41a9-97f5-e045c55a7203)
+  
   Although a lower accuracy score was produced compared to the original model according to the Classification Report:
   ![image](https://github.com/marianneo812/project_4_group_8/assets/151903302/75d17e4c-9187-4ee5-9790-318faec82d7a)
 
