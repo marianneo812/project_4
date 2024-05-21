@@ -19,7 +19,7 @@ The dataset used esd taken from Kaggle using a csv file containing 21 'features'
 
 **Data Model Optimisation:**
 - **Optimising using same model:**
-- **Optimising using a different model:** Tensorflow model using three hidden layers was trained to achieve a higher accuracy score for predicting heart disease.
+- **Optimising using a different model:** Tensorflow model using three hidden layers was trained to attempt to achieve a higher accuracy score for predicting heart disease.
   
   ![image](https://github.com/marianneo812/project_4_group_8/assets/151903302/e958587d-5afa-41a9-97f5-e045c55a7203)
   
