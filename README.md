@@ -27,8 +27,14 @@ The dataset used esd taken from Kaggle using a csv file containing 21 'features'
   ![image](https://github.com/marianneo812/project_4_group_8/assets/151903302/75d17e4c-9187-4ee5-9790-318faec82d7a)
 
 ## Interactive Webpage:
-A webpage form was created (index.html) based on the model, whereby users input responses in fields for each 'feature' variable, and at the end of the form, the model will return a likelihood percentage of determining whether that user has or will develop heart disease (based on their responses). 
+- **Run the application:
+- python data/app.py
+- Open a web browser and go to http://127.0.0.1:5000.
+- Fill out the form with your health information and click "Predict" to get the prediction of heart disease likelihood.
 <img src="https://github.com/marianneo812/project_4_group_8/assets/151903302/5ea2cd3a-edcd-41c3-8525-26761cbbdd63" alt="Image" style="border: 1px solid black;">
+
+** Key Components:
+
 
 The graph on the bottom shows the importance of each feature in determining accuracy of predicting heart disease. 
 <img width="700" alt="image" src="https://github.com/marianneo812/project_4_group_8/assets/151903302/b13f6d10-e2a9-4353-a8c9-237d45ae876e">
