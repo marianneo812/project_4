@@ -48,9 +48,9 @@ The `index.html` file is the front-end part of the application. It contains the 
 
 ### Feature Importance Graph
 
-The feature importance graph helps us understand which features have the most impact on predicting heart disease. The graph shows that General Health, Age, and Stroke are among the top features influencing the model's predictions. Visualising feature importance not only helps in model interpretation but also in explaining the results to stakeholders.
+The feature importance graph provides valuable insights into which factors have the greatest influence on predicting heart disease. According to the graph, General Health, Age, and Stroke rank among the top features shaping the model's predictions. Visualising feature importance serves not only to aid in model interpretation but also in effectively communicating results to stakeholders.
 
-The graph on the bottom shows the importance of each feature in determining accuracy of predicting heart disease. 
+The graph displayed below illustrates the significance of each feature in accurately predicting heart disease.
 
 <img width="700" alt="image" src="https://github.com/marianneo812/project_4_group_8/assets/151903302/b13f6d10-e2a9-4353-a8c9-237d45ae876e">
 
