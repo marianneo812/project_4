@@ -32,13 +32,26 @@ The dataset used esd taken from Kaggle using a csv file containing 21 'features'
 - To run the application locally, execute the following command: python data/app.py
 - Open a web browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000).
 - Fill out the form with your health information and click "Predict" to get the prediction of heart disease likelihood.
+  
 ![image](https://github.com/marianneo812/project_4_group_8/assets/149750967/e2eed049-9478-44ec-8f5f-d7839f9432a2)
 
 
-** Key Components:
+## Key Components:
 
+### app.py
+
+The `app.py` script is built using the Flask framework. It handles the server-side logic of the application, including routes for rendering the main HTML page and processing form submissions.
+
+### index.html
+
+The `index.html` file is the front-end part of the application. It contains the user interface elements, such as form fields for users to enter their health information. It also includes a BMI calculator to help users calculate their Body Mass Index directly on the site.
+
+### Feature Importance Graph
+
+The feature importance graph helps us understand which features have the most impact on predicting heart disease. The graph shows that General Health, Age, and Stroke are among the top features influencing the model's predictions. Visualising feature importance not only helps in model interpretation but also in explaining the results to stakeholders.
 
 The graph on the bottom shows the importance of each feature in determining accuracy of predicting heart disease. 
+
 <img width="700" alt="image" src="https://github.com/marianneo812/project_4_group_8/assets/151903302/b13f6d10-e2a9-4353-a8c9-237d45ae876e">
 
 ## Conclusion:
