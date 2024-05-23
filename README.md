@@ -33,7 +33,6 @@ python data/app.py
 Open a web browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000).
 Fill out the form with your health information and click "Predict" to get the prediction of heart disease likelihood.
 
-<img src="https://github.com/marianneo812/project_4_group_8/assets/151903302/5ea2cd3a-edcd-41c3-8525-26761cbbdd63" alt="Image" style="border: 1px solid black;">
 
 ** Key Components:
 
