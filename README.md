@@ -29,7 +29,7 @@ The dataset used esd taken from Kaggle using a csv file containing 21 'features'
 ## Interactive Webpage:
 ### Run the application:
 
-- python data/app.py
+- To run the application locally, execute the following command: python data/app.py
 - Open a web browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000).
 - Fill out the form with your health information and click "Predict" to get the prediction of heart disease likelihood.
 
